@@ -4,10 +4,19 @@
 
 _????-??-??_
 
+ * Fix compilation with clang 19 (#3799).
+
+ * Deprecate version of `data::Split()` that returns a `std::tuple` for
+   consistency; use other overloads instead (#3803).
+
+## mlpack 4.5.0
+
+_2024-09-17_
+
  * Distribute STB headers as part of R package (#3724, #3726).
 
  * Added OpenMP parallelization to Hamerly, Naive, and Elkan k-means (#3761, #3762, #3764).
- 
+
  * Added OpenMP support for fast approximation (#3685).
 
  * Implemented the Find and Fill algorithm into the Dropout Layer and added OpenMP support (#3684).
@@ -115,7 +124,7 @@ _2023-09-05_
   * Add `ClassProbabilities()` member to `DecisionTree` so that the internal
     details of trees can be more easily inspected (#3511).
 
-  * Bipolar sigmoid activation function added and invertible functions 
+  * Bipolar sigmoid activation function added and invertible functions
     fixed (#3506).
 
   * Add auto-configured `mlpack/config.hpp` to contain configuration details of
